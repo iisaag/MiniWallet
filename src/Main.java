@@ -12,7 +12,6 @@ public class Main {
 
         int opcao = 0;
         while (opcao != 4) {
-            System.out.println("Saldo atual: R$ " + carteira.getSaldoDisponivel());
             System.out.println("\nO que deseja fazer?");
             System.out.println("1 - Adicionar gasto");
             System.out.println("2 - Listar gastos");
@@ -33,10 +32,6 @@ public class Main {
                 default -> System.out.println("Opção inválida!");
             }
         }
-
-        Gasto gasto = criarGasto(scan);
-        carteira.adicionarGasto(gasto);
-        carteira.listarGastos();
 
         scan.close();
     }
