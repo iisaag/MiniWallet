@@ -15,11 +15,11 @@ public class Carteira {
     }
 
     public double calcularTotalGastos() {
-            double total = 0;
-            for (Gasto gasto : gastos) {
-                total += gasto.getValor();
-            }
-            return total;
+        double total = 0;
+        for (Gasto gasto : gastos) {
+            total += gasto.getValor();
+        }
+        return total;
     }
 
     public double getSaldoDisponivel() {

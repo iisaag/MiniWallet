@@ -4,6 +4,12 @@ public class Gasto {
     private String categoria;
     private String descricao;
 
+    public Gasto(float valor, String categoria, String descricao) {
+        this.valor = valor;
+        this.categoria = categoria;
+        this.descricao = descricao;
+    }
+
     public float getValor() {
         return valor;
     }
@@ -13,13 +19,6 @@ public class Gasto {
     }
 
     public String getDescricao() {
-
         return descricao;
-    }
-
-    public Gasto(float valor, String categoria, String descricao) {
-        this.valor = valor;
-        this.categoria = categoria;
-        this.descricao = descricao;
     }
 }
